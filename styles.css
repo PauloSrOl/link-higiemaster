@@ -5,7 +5,7 @@
 }
 body {
     background-image: url(imagem/header.jpg);
-
+ 
     background-position: center; /* Centraliza o fundo */
     font-family: 'Arial', sans-serif;
     background-color: #181a1aea;
@@ -29,7 +29,7 @@ header {
 .logo-container {
     width: 150px; /* Tamanho do círculo */
     height: 150px; /* Tamanho do círculo */
-    background-color: rgba(255, 255, 255, 0.171); /* Cor de fundo do círculo */
+    background-color: rgb(0, 0, 0); /* Cor de fundo do círculo */
     border-radius: 50%; /* Faz o círculo */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente o conteúdo */
@@ -160,6 +160,10 @@ h2 {
 }
 
 @media (max-width: 600px) {
+
+    body{
+        background-size: cover;
+    }
     .container {
         padding: 15px;
     }
