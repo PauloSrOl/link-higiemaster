@@ -124,15 +124,15 @@ h2 {
 }
 
 .instagram-link {
-    color: #E4405F; /* Cor do Instagram */
-    font-size: 3em; /* Tamanho do ícone */
+    color: #E4405F; 
+    font-size: 3em;
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .instagram-link:hover {
     transform: scale(1.1);
-    color: #C13584; /* Cor mais escura ao passar o mouse */
+    color: #C13584; 
 }
 
 @media (max-width: 600px) {
