@@ -5,18 +5,18 @@
 }
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #296dd4;
+    background-color: #181a1aea;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Alterado de height para min-height */
+    min-height: 100vh; 
     padding: 20px;
-    flex-direction: column; /* Permitir que o conteúdo possa crescer verticalmente */
+    flex-direction: column; 
 }
 
 .container {
-    background-color: #ffffff;
+    background-color: #070707;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -26,7 +26,7 @@ body {
 
 h2 {
     text-align: center;
-    color: #4a90e2;
+    color: #d38013;
     margin-bottom: 20px;
 }
 
@@ -34,6 +34,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 15px;
     margin-bottom: 15px;
     background-color: #e0e0e0;
@@ -43,23 +44,32 @@ h2 {
 
 .vendedor img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     transition: transform 0.3s ease;
+    object-fit: cover;
 }
 
 .vendedor:hover img {
     transform: scale(1.1);
 }
+
 .btn-contato{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ADD8E6; /* Azul claro */
+    background-color: #df972b; 
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
     border: 2px solid transparent;
     transition: background-color 0.3s, border-color 0.3s;
+}
+
+.Logo {
+    width: 150px;
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
 }
 
 .info {
@@ -70,7 +80,7 @@ h2 {
 .info span {
     display: block;
     font-weight: bold;
-    color: #000000;
+    color: #020100;
     margin-bottom: 5px;
 }
 
@@ -82,12 +92,46 @@ h2 {
 }
 
 .info a:hover {
-    color: #2a51cf;
+    color: #ffffff;
 }
 
 .vendedor:hover {
     background-color: #d6d6d6;
     transform: translateY(-5px);
+}
+
+
+
+.localizacao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.localizacao h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.instagram {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.instagram h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.instagram-link {
+    color: #E4405F; /* Cor do Instagram */
+    font-size: 3em; /* Tamanho do ícone */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.instagram-link:hover {
+    transform: scale(1.1);
+    color: #C13584; /* Cor mais escura ao passar o mouse */
 }
 
 @media (max-width: 600px) {
