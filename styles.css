@@ -5,6 +5,8 @@
 }
 body {
     background-image: url(imagem/header.jpg);
+
+    background-position: center; /* Centraliza o fundo */
     font-family: 'Arial', sans-serif;
     background-color: #181a1aea;
     color: #333;
@@ -15,10 +17,7 @@ body {
     padding: 20px;
     flex-direction: column; 
 }
-header {
-    
-    background-size: cover; /* Cobre toda a área disponível */
-    background-position: center; /* Centraliza o fundo */
+header { 
     height: 300px; /* Ajuste conforme o design desejado */
     width: 600px;
     display: flex;
