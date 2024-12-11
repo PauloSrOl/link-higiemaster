@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body {
+    background-image: url(imagem/header.jpg);
     font-family: 'Arial', sans-serif;
     background-color: #181a1aea;
     color: #333;
@@ -14,7 +15,36 @@ body {
     padding: 20px;
     flex-direction: column; 
 }
+header {
+    
+    background-size: cover; /* Cobre toda a área disponível */
+    background-position: center; /* Centraliza o fundo */
+    height: 300px; /* Ajuste conforme o design desejado */
+    width: 600px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
 
+/* Estilização do container da logo */
+.logo-container {
+    width: 150px; /* Tamanho do círculo */
+    height: 150px; /* Tamanho do círculo */
+    background-color: rgba(255, 255, 255, 0.171); /* Cor de fundo do círculo */
+    border-radius: 50%; /* Faz o círculo */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
+    border: 5px solid #ccc; /* Adiciona borda ao círculo (opcional) */
+}
+
+/* Estilização da logo */
+.logo {
+    width: 80%; /* Ajuste conforme o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Caso queira deixar a imagem dentro com bordas arredondadas */
+}
 .container {
     background-color: #070707;
     border-radius: 10px;
@@ -65,12 +95,7 @@ h2 {
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-.Logo {
-    width: 150px;
-    height: auto; 
-    display: block; 
-    margin: 20px auto; 
-}
+
 
 .info {
     flex-grow: 1;
