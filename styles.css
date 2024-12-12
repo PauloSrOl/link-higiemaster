@@ -5,7 +5,7 @@
 }
 body {
     background-image: url(imagem/header.jpg);
- 
+    background-repeat: repeat;
     background-position: center; /* Centraliza o fundo */
     font-family: 'Arial', sans-serif;
     background-color: #181a1aea;
@@ -23,6 +23,28 @@ header {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+}
+
+.horario-atendimento {
+    background: linear-gradient(90deg, #350e0ead, #d38013); /* Fundo com gradiente vibrante */
+    color: #fff; /* Cor do texto em branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Espaçamento interno */
+    font-family: 'Poppins', sans-serif; /* Fonte moderna e jovial */
+    font-size: 18px; /* Tamanho da fonte */
+    border-bottom: 2px solid #d46306; /* Linha marcante abaixo */
+    letter-spacing: 0.5px; /* Espaçamento suave entre letras */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+.horario-atendimento i {
+    margin-right: 10px; 
+    font-size: 22px; 
+}
+
+.horario-atendimento strong {
+    color: #ffe8f1; 
+    font-weight: bold; 
 }
 
 /* Estilização do container da logo */
@@ -137,32 +159,51 @@ h2 {
 }
 
 .instagram {
-    text-align: center;
-    margin: 20px 0;
+    background: linear-gradient(90deg, #bb672e, #fd1d1d, #fcb045); /* Gradiente inspirado no Instagram */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 20px 0; /* Espaçamento vertical */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .instagram h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #ffffff;
+    color: #fff; /* Cor do título */
+    font-family: 'Poppins', sans-serif; /* Fonte jovem */
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
 }
 
-.instagram-link {
-    color: #E4405F; 
-    font-size: 3em;
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
+.instagram a {
+    display: inline-flex; /* Elementos alinhados horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    margin-top: 10px; /* Espaçamento superior */
+    padding: 10px 20px; /* Espaçamento interno no link */
+    border: 2px solid #fff; /* Borda branca */
+    border-radius: 50px; /* Bordas arredondadas */
+    transition: 0.3s ease; /* Transição suave para hover */
 }
 
-.instagram-link:hover {
-    transform: scale(1.1);
-    color: #C13584; 
+.instagram a i {
+    font-size: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
 }
 
+.instagram a:hover {
+    background-color: #fff; /* Fundo branco no hover */
+    color: #df972b; /* Texto com cor de destaque */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
 @media (max-width: 600px) {
 
-    body{
-        background-size: cover;
+    body {
+        background-size: contain; /* Ajusta o tamanho do background para caber na tela */
     }
     .container {
         padding: 15px;
